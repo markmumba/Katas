@@ -83,4 +83,31 @@
 # print(test)
 
 
+# ...................................................................................
+# Adding to list together to get sum of the numbers on the same idexes 
+# ............................................................................
 
+# arr1=[2,3,4,5,6,7,5,3]
+# arr2=[3,4,7,4,2,1,5,0]
+
+# sumed = 0
+# empty=[]
+# for i in range(0,len(arr1)):
+#         sumed=arr1[i]+arr2[i]
+#         empty.append(sumed)
+
+# print( empty )
+        
+
+# ........................................................................................
+# Looking for letter that is not repeated  in the string 
+# ........................................................................................
+# def removeRepeat(s):
+#     listed = list(s)
+#     for letter in listed:
+#         if listed.count(letter)==1:
+#             return letter
+
+# test = removeRepeat('bbbbeeekkkkggggllllllsssstjjjjj')
+# print(test)
+        
