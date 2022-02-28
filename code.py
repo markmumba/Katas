@@ -669,3 +669,16 @@
 #         return -1
 
 #______________________________________________________________________________________________________________________________________________________________
+
+# def solution(s):
+#     text= list(s)
+#     final =""
+#     for index, char in enumerate(text):
+#         if char.isupper():
+#             final += " "
+#         final +=char 
+#     return final 
+ 
+
+# test = solution("camelCasing")
+# print (test)
