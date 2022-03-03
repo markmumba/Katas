@@ -701,3 +701,30 @@
 # print(test)
 
 #________________________________________________________________________________________________________________________________________________________
+# finding the unique number in the  list given 
+#* solution 1  
+
+# works but timesout when the list is too large 
+
+# def find_uniq(arr:list)-> int:
+#     for i in arr:
+#         if arr.count(i) == 1:
+#             return i
+
+# test = find_uniq([ 3, 10, 3, 3, 3 ])
+# print(test)
+
+#* solution 2
+
+# from collections import Counter
+
+# def find_uniq(arr):
+#     number_count=Counter(arr)
+#     for i in number_count:
+#         if number_count[i] == 1:
+#             return i
+
+# test = find_uniq([ 3, 10, 3, 3, 3 ])
+# print(test)
+
+#__________________________________________________________________________________________________________________________________________________________
