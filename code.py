@@ -767,4 +767,20 @@
 # test = delete_nth([2,2,2,3,3,3,3],2)
 # print(test)
 
-#______________________________________________________________________________________________________________________________________-
+#_______________________________________________________________________________________________________________________________________
+import cmath
+def find_next_square(sq):
+    """Return the next square if sq is a square, -1 otherwise
+
+    Returns:
+        _type_: _description_
+    """    
+    sqrt = sq**0.5
+    print (sqrt)
+    if sqrt.is_integer() :
+        return (sqrt+1)**2
+    return -1
+
+test  = find_next_square(625)
+print(test)
+   
