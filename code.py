@@ -728,3 +728,43 @@
 # print(test)
 
 #__________________________________________________________________________________________________________________________________________________________
+
+#What is an anagram? Well, two words are anagrams of each other if they both contain the same letters.
+#* not yet solved 
+# def anagrams(word, words):
+#     new = []
+#     original = set( word)
+#     for word in words:
+#         check= set(word)
+#         if  original == check :
+#             new.append(word)
+#     return new
+
+# test = anagrams( 'abba', ['aabb', 'abcd', 'bbaa', 'dada'])
+# print(test)
+
+#_________________________________________________________________________________________________________________________
+# Given a list lst and a number N, create a new 
+# list that contains each number of lst at most N 
+# times without reordering. For example if N = 2, 
+# and the input is [1,2,3,1,2,1,2,3], you take [1,2,3,1,2], 
+# drop the next [1,2] since this would 
+# lead to 1 and 2 being in the result 3 times,
+#  and then take 3, which leads to [1,2,3,1,2,3].
+
+
+
+# def delete_nth(order:list,max_e:int)->list:
+#     """_summary_
+#     """
+#     lst = []
+#     for i in order:
+#         if lst.count(i)< max_e:
+#             lst.append(i)
+#     return lst
+
+
+# test = delete_nth([2,2,2,3,3,3,3],2)
+# print(test)
+
+#______________________________________________________________________________________________________________________________________-
