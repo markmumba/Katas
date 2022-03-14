@@ -111,7 +111,7 @@
 #     """A function that takes in a string of letters and returns true if the count of all the letters is equal
 
 #     Args:
-#         word (string): the input that is used to check the count 
+#         word (string): the input that is used to check the count
 
 #     Returns:
 #         Boolean : returns true or False if depending on the count of the characters
@@ -119,7 +119,7 @@
 #     dicto = {}
 
 #     lowercase = word.lower()
-   
+
 #     for char in lowercase:
 #         dicto[char] = lowercase.count(char)
 #     print(dicto)
@@ -137,9 +137,9 @@
 # def validate_word(word):
 #     return len(set(Counter(word.lower()).itervalues())) == 1
 
-#_______________________________________________________________________________________________________________________________________________________
+# _______________________________________________________________________________________________________________________________________________________
 
-# def split_in_parts(s, part_length): 
+# def split_in_parts(s, part_length):
 #     """[summary]
 
 #     Args:
@@ -156,11 +156,7 @@
 #     return " ".join(empty)
 
 
-
-
-
-
-#_________________________________________________________________________________________________________________________________________________________
+# _________________________________________________________________________________________________________________________________________________________
 # from collections import Counter
 # # x= Counter ("abcabcabcabc")
 # # print(x)
@@ -177,12 +173,12 @@
 #                 if char .isalpha():
 #                     f.append(char)
 #             letter_counter.update(Counter(f))
-            
+
 #     return letter_counter
 
-#______________________________________________________________________________________________
+# ______________________________________________________________________________________________
 # def fib(n):
-#     if n==0: return n 
+#     if n==0: return n
 #     last= 0
 #     first=1
 #     second = 1
@@ -191,13 +187,11 @@
 #     return second
 
 
-
-
 # if __name__ == "__main__":
 #     print(fib(10))
 
 
-#_____________________________________________________________________________________________
+# _____________________________________________________________________________________________
 
 # def findDisappearedNumbers( nums: list )  -> list:
 #     list =[]
@@ -210,10 +204,10 @@
 # test = findDisappearedNumbers([1,1])
 # print (test)
 
-#_______________________________________________________________________________________________________
+# _______________________________________________________________________________________________________
 
 
-#Type Hinting
+# Type Hinting
 
 # def headline(text: str, align: bool = True) -> str :
 #     if align:
@@ -226,7 +220,7 @@
 # print (test)
 
 
-#________________________________________________________________________________________________
+# ________________________________________________________________________________________________
 
 # def sum_of_two(numbers):
 #     numbers.sort()
@@ -236,27 +230,25 @@
 # test=sum_of_two([1,5,7,8,2,9])
 # print (test)
 
-#_____________________________________________________________________________________________________
+# _____________________________________________________________________________________________________
 
-# Finding the perfect square given a number , return true if its perfect return false if its not 
+# Finding the perfect square given a number , return true if its perfect return false if its not
 # import math
 
-# def is_square(n): 
+# def is_square(n):
 #     if n < 0 :
 #         return False
 
 #     x=math.sqrt(n)
 #     return x.is_integer()
-  
-  
 
- 
+
 # test = is_square(-1)
 # print(test)
 
-#________________________________________________________________________________________________
+# ________________________________________________________________________________________________
 
-# Replace characters in strings 
+# Replace characters in strings
 
 # def  replace_string(s:str)->str:
 #     return s.replace("()","o").replace("(al)","al")
@@ -267,7 +259,7 @@
 
 # ____________________________________________________________________________________________
 
-# Given a sentence find the shortest's word length 
+# Given a sentence find the shortest's word length
 
 # def find_shortes_string(sent:str ) ->int :
 #     lst=sent.split()
@@ -287,7 +279,7 @@
 # test = powers_of_two(4)
 # print(test)
 
-#___________________________________________________________________________________
+# ___________________________________________________________________________________
 
 
 # def get_vowel_count(s:str)->int:
@@ -295,8 +287,8 @@
 
 # test= get_vowel_count("abracadabra")
 # print(test)
-    
-#_________________________________________________________________________________________
+
+# _________________________________________________________________________________________
 
 # def to_underscore(string:str)-> str:
 #     string =str(string)
@@ -309,14 +301,11 @@
 
 #     return final
 
-  
 
-    
-    
 # test = to_underscore(1)
 # print(test)
 
-#_____________________________________________________________________________________________
+# _____________________________________________________________________________________________
 # from math import floor
 # def get_average(marks:list)->int:
 #     return floor(sum(marks)/len(marks))
@@ -324,31 +313,30 @@
 
 # test=get_average([2,5,13,20,16,16,10])
 # print(test)
-#____________________________________________________________________________________________________
+# ____________________________________________________________________________________________________
 
 
 # def remove_duplicate_words(s):
 #     empty =[]
 #     for word in s.split():
 #         if word not in empty:
-#             empty.append(word) 
+#             empty.append(word)
 #     return " ".join(empty)
 # test = remove_duplicate_words("alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta")
 # print(test)
 
 
-#_____________________________________________________________________________________________________________________________
+# _____________________________________________________________________________________________________________________________
 
 # def odd_ones_out(numbers:list)->list():
 #     final =list ([ number for number in numbers if numbers.count(number)%2 ==0])
 #     return final
 
 
-
 # test = odd_ones_out([75, 68, 75, 47, 68])
 # print(test)
 
-#______________________________________________________________________________________
+# ______________________________________________________________________________________
 
 
 # def reverse_words(text:str)->str:
@@ -359,7 +347,7 @@
 #         empty.append(x)
 #     return " ".join(empty)
 
-#_________________________________________________________________________________________________
+# _________________________________________________________________________________________________
 
 # def reverse_words(text:str)->str:
 #     ans=[ word[::-1]  for word in text.split()]
@@ -380,16 +368,15 @@
 #             elif letter == "C":
 #                 x.append("G")
 #             elif letter == "G":
-#                 x.append("C")  
+#                 x.append("C")
 
-#         return "".join(x)  
-
+#         return "".join(x)
 
 
 # test= DNA_strand("AAAA")
 # print(test)
 
-#_______________________________________________________________________________________
+# _______________________________________________________________________________________
 
 # def to_camel_case(text:str)-> str:
 #     """
@@ -398,19 +385,17 @@
 #     final =""
 #     for index,char in enumerate(text):
 #         if char == "-" or char == "_":
-#             final = 
+#             final =
 #             text[index+1].upper()
-#             text.remove(char) 
+#             text.remove(char)
 #     return "".join(text)
-
-
 
 
 # test = to_camel_case("the_steal_th_warrior")
 # print(test)
 
 
-#_______________________________________________________________________________________
+# _______________________________________________________________________________________
 
 # def duplicate_encode(word:str)->str:
 #     arr=[]
@@ -424,13 +409,11 @@
 #     return "".join(arr)
 
 
-
 # test= duplicate_encode("D(@iZ@XVNOu@qHcBwXhfNW@DXz(PP")
 # print (test)
 
 
-
-#___________________________________________________________________________________
+# ___________________________________________________________________________________
 
 # def unique_in_order(iterable):
 #     lst=[]
@@ -439,7 +422,7 @@
 #             lst.append(x)
 #     return lst
 
-#___________________________________________________________________________________
+# ___________________________________________________________________________________
 
 
 # def open_or_senior(data:list)->list:
@@ -473,10 +456,8 @@
 # test = printer_error("aaabbbbhaijjjm")
 # print(test)
 
-    
 
-
-#____________________________________________________________________________
+# ____________________________________________________________________________
 
 
 # def binary_array_to_number(arr):
@@ -486,16 +467,14 @@
 #     return int(x,2)
 
 
-
-
 # test = binary_array_to_number([0, 0, 0, 1])
 # print(test)
-    
-  
-#________________________________________________________________________________________
+
+
+# ________________________________________________________________________________________
 
 # def high(x):
-    
+
 #     alpha = {'a':1,'b':2,'c':3,'d':4,'e':5,'f':6,'g':7,'h':8,'i':9,'j':10,
 #     'k':11,'l':12,'m':13,'n':14,'o':15,'p':16,'q':17,'r':18,'s':19,'t':20,
 #     'u':21,'v':22,'w':23,'x':24,'y':25,'z':26}
@@ -505,18 +484,14 @@
 #     print(x)
 #     for word in x:
 #         for letter in word:
-                
-         
+
+
 #                 count += alpha.get(letter)
-            
-               
+
+
 #         result[word]=count
 
 #     return result
-
-
-
-
 
 
 # test = high('man i need a taxi up to ubud')
@@ -531,7 +506,7 @@
 # test = to_jaden_case("am so hype'd")
 # print(test)
 
-#_________________________________________________________________________________________
+# _________________________________________________________________________________________
 
 # def alphabet_position(text:str) ->str:
 #     alpha = {'a':1,'b':2,'c':3,'d':4,'e':5,'f':6,'g':7,'h':8,'i':9,'j':10,
@@ -548,7 +523,6 @@
 #     return " ".join([str(int) for int in arr])
 
 
-
 # test = alphabet_position("The sunset sets at twelve o' clock.")
 # print(test)
 
@@ -561,11 +535,9 @@
 #     return lst
 
 
-
-
 # test = solution("asdfads")
 # print(test)
-#____________________________________________________________________________________________________
+# ____________________________________________________________________________________________________
 
 # def tower_builder(n_floors:int )-> list:
 #     lst=[]
@@ -575,13 +547,10 @@
 #     return lst
 
 
-
-
 # test = tower_builder(6)
 # print(test)
 
 # ___________________________________________________________________________________________________
-
 
 
 # def sort_array(source_array:list) -> list:
@@ -592,12 +561,12 @@
 #         if source_array[i] % 2 !=0:
 #             source_array[i]=b[odd_int]
 #             odd_int +=1
-#     return source_array    
+#     return source_array
 
 # test = sort_array([9, 8, 7, 6, 5, 4, 3, 2, 1, 0])
 # print(test)
 
-#______________________________________________________________________________________________________
+# ______________________________________________________________________________________________________
 
 # def rake_garden(garden):
 #     return " ".join(w if w == "rock" else "gravel" for w in garden.split())
@@ -607,22 +576,21 @@
 # print(test)
 
 
-
-#_______________________________________________________________________________________________
+# _______________________________________________________________________________________________
 
 # def count_bits(n):
 #     x= bin(n).replace("0b", "")
 #     m=0
 #     for num in str(x):
 #         m+= int(num)
-        
+
 #     return  m
 
 # test = count_bits(5)
 # print(test)
 
 
-#__________________________________________________________________________________________________
+# __________________________________________________________________________________________________
 # Some numbers have funny properties. For example:
 
 # 89 --> 8¹ + 9² = 89 * 1
@@ -657,7 +625,7 @@
 # test = dig_pow(695, 2)
 # print(test)
 
-#* Solution 2
+# * Solution 2
 # def dig_pow(n, p):
 #     sum = 0
 #     for c in str(n):
@@ -668,7 +636,7 @@
 #     else:
 #         return -1
 
-#______________________________________________________________________________________________________________________________________________________________
+# ______________________________________________________________________________________________________________________________________________________________
 
 # def solution(s):
 #     text= list(s)
@@ -676,18 +644,18 @@
 #     for index, char in enumerate(text):
 #         if char.isupper():
 #             final += " "
-#         final +=char 
-#     return final 
- 
+#         final +=char
+#     return final
+
 
 # test = solution("camelCasing")
 # print (test)
 
 
-#___________________________________________________________________________________________________________________________________________________
+# ___________________________________________________________________________________________________________________________________________________
 
 
-# first set of pairs to add up to the given values 
+# first set of pairs to add up to the given values
 # def sum_pairs(ints, s):
 #     lst=set()
 #     for i in ints:
@@ -695,16 +663,16 @@
 #         if x in lst:
 #             return [x,i]
 #         lst.add(i)
-      
+
 
 # test  = sum_pairs([5, 9, 13, -3], 10)
 # print(test)
 
-#________________________________________________________________________________________________________________________________________________________
-# finding the unique number in the  list given 
-#* solution 1  
+# ________________________________________________________________________________________________________________________________________________________
+# finding the unique number in the  list given
+# * solution 1
 
-# works but timesout when the list is too large 
+# works but timesout when the list is too large
 
 # def find_uniq(arr:list)-> int:
 #     for i in arr:
@@ -714,7 +682,7 @@
 # test = find_uniq([ 3, 10, 3, 3, 3 ])
 # print(test)
 
-#* solution 2
+# * solution 2
 
 # from collections import Counter
 
@@ -727,10 +695,10 @@
 # test = find_uniq([ 3, 10, 3, 3, 3 ])
 # print(test)
 
-#__________________________________________________________________________________________________________________________________________________________
+# __________________________________________________________________________________________________________________________________________________________
 
-#What is an anagram? Well, two words are anagrams of each other if they both contain the same letters.
-#* not yet solved 
+# What is an anagram? Well, two words are anagrams of each other if they both contain the same letters.
+# * not yet solved
 # def anagrams(word, words):
 #     new = []
 #     original = set( word)
@@ -743,15 +711,14 @@
 # test = anagrams( 'abba', ['aabb', 'abcd', 'bbaa', 'dada'])
 # print(test)
 
-#_________________________________________________________________________________________________________________________
-# Given a list lst and a number N, create a new 
-# list that contains each number of lst at most N 
-# times without reordering. For example if N = 2, 
-# and the input is [1,2,3,1,2,1,2,3], you take [1,2,3,1,2], 
-# drop the next [1,2] since this would 
+# _________________________________________________________________________________________________________________________
+# Given a list lst and a number N, create a new
+# list that contains each number of lst at most N
+# times without reordering. For example if N = 2,
+# and the input is [1,2,3,1,2,1,2,3], you take [1,2,3,1,2],
+# drop the next [1,2] since this would
 # lead to 1 and 2 being in the result 3 times,
 #  and then take 3, which leads to [1,2,3,1,2,3].
-
 
 
 # def delete_nth(order:list,max_e:int)->list:
@@ -767,20 +734,78 @@
 # test = delete_nth([2,2,2,3,3,3,3],2)
 # print(test)
 
-#_______________________________________________________________________________________________________________________________________
-import cmath
-def find_next_square(sq):
-    """Return the next square if sq is a square, -1 otherwise
+# _______________________________________________________________________________________________________________________________________
+# import cmath
+# def find_next_square(sq):
+#     """Return the next square if sq is a square, -1 otherwise
 
-    Returns:
-        _type_: _description_
-    """    
-    sqrt = sq**0.5
-    print (sqrt)
-    if sqrt.is_integer() :
-        return (sqrt+1)**2
-    return -1
+#     Returns:
+#         _type_: _description_
+#     """
+#     sqrt = sq**0.5
+#     print (sqrt)
+#     if sqrt.is_integer() :
+#         return (sqrt+1)**2
+#     return -1
 
-test  = find_next_square(625)
+# test  = find_next_square(625)
+# print(test)
+
+
+# _______________________________________________________________________________________________________________________________________________
+
+# * understanding regular expressions in python
+
+# import re
+
+# string = "lewishamiltonmaxverstapenlandonorris"
+
+# x= re.search('[l-o][h-j][k-m]', string)
+# y = re.search('l...s', string)
+# #matching a single character
+# a= re.search('la[omdn]', string)
+# b = re.search('la[ndon]', string)
+
+# #match a character that isn't in the set
+# c= re.search('[^0-9]',string)
+# #match based on whether a character is a word character
+# d= re.search('\w', '#@*b%$#()@^')
+# #opposite is \W
+# #Decimal digit \d \D
+# e=  re.search('\d', 'runrunrun3')
+
+# f= re.search('[\d\w\s]', '3we\nn3')
+# print(f)
+# # removing the special character meaning using \
+# # use raw string  to bypass the python intepreter
+# g= re.search(r'\\', 'ian\mumba')
+# print(g)
+
+# __________________________________________________________________________________________________________________________
+
+
+#solution 1 -> brute force my first idea 
+
+def rot13(message):
+    alpha = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6, 'g': 7, 'h': 8, 'i': 9, 'j': 10, 'k': 11, 'l': 12, 'm': 13,
+             'n': 14, 'o': 15, 'p': 16, 'q': 17, 'r': 18, 's': 19, 't': 20, 'u': 21, 'v': 22, 'w': 23, 'x': 24, 'y': 25, 'z': 26}
+    x = list(message)
+    lst1 = []
+    lst2 = []
+    i = 13
+    for letter in x:
+        num = alpha[letter] + 13
+        if num > 26:
+            n = num - 26
+            lst1.append(n)
+        else:
+            lst1.append(num)
+    for j in lst1:
+        for letter, number in alpha.items():
+            if j == number:
+                lst2.append(letter)
+    return "".join(lst2)
+
+
+test = rot13('test')
 print(test)
-   
