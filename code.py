@@ -786,26 +786,58 @@
 
 #solution 1 -> brute force my first idea 
 
-def rot13(message):
-    alpha = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6, 'g': 7, 'h': 8, 'i': 9, 'j': 10, 'k': 11, 'l': 12, 'm': 13,
-             'n': 14, 'o': 15, 'p': 16, 'q': 17, 'r': 18, 's': 19, 't': 20, 'u': 21, 'v': 22, 'w': 23, 'x': 24, 'y': 25, 'z': 26}
-    x = list(message)
-    lst1 = []
-    lst2 = []
-    i = 13
-    for letter in x:
-        num = alpha[letter] + 13
-        if num > 26:
-            n = num - 26
-            lst1.append(n)
-        else:
-            lst1.append(num)
-    for j in lst1:
-        for letter, number in alpha.items():
-            if j == number:
-                lst2.append(letter)
-    return "".join(lst2)
+# def rot13(message):
+#     alpha = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6, 'g': 7, 'h': 8, 'i': 9, 'j': 10, 'k': 11, 'l': 12, 'm': 13,
+#              'n': 14, 'o': 15, 'p': 16, 'q': 17, 'r': 18, 's': 19, 't': 20, 'u': 21, 'v': 22, 'w': 23, 'x': 24, 'y': 25, 'z': 26}
+#     x = list(message)
+#     lst1 = []
+#     lst2 = []
+#     i = 13
+#     for letter in x:
+#         num = alpha[letter] + 13
+#         if num > 26:
+#             n = num - 26
+#             lst1.append(n)
+#         else:
+#             lst1.append(num)
+#     for j in lst1:
+#         for letter, number in alpha.items():
+#             if j == number:
+#                 lst2.append(letter)
+#     return "".join(lst2)
 
 
-test = rot13('test')
+# test = rot13('test')
+# print(test)
+
+#___________________________________________________________________________________________________________________________________________________________
+
+# def series_sum(n):
+#     if n != 0:
+#         result =1
+#         d=4
+#         for i in range(n-1):
+#             result +=1/d
+#             d +=3
+#         return "{:.2f}".format(result)
+#     else:
+#         return "{:.2f}".format(n)
+
+
+# test = series_sum(3)
+# print(test)
+
+#_______________________________________________________________________________________________________________________
+
+def solution(number):
+    result = []
+    if number >= 0:
+        for num in range(number):
+            if num % 3 == 0 or num%5 == 0:
+                result.append(num)
+        return sum(set(result))
+    else:
+        return 0
+
+test = solution(10)
 print(test)
